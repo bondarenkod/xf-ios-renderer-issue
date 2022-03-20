@@ -13,8 +13,8 @@ There is a chance that there is a problem in my environment or setup.
 
 
 ### Expected Behavior
-- Both labels for both platforms should be of 'HotPink' color.
-- Debug is also not working in `file`, neither `.ctor` or `OnElementChanged` are called. 
+- Both Entry controls for both platforms should be of 'HotPink' color.
+- Debug is also not working in `AwesomeControl.iOS\AwesomeEntryRenderer.cs`, neither `.ctor` or `OnElementChanged` are called. 
 
 
 ### Actual Behavior
