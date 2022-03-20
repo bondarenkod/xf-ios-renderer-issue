@@ -28,10 +28,10 @@
             HorizontalOptions="Fill"
             VerticalOptions="FillAndExpand">
             <Label Text="AwesomeEntry:" />
-            <awesomeControl:AwesomeEntry />
+            <awesomeControl:AwesomeEntry x:Name="L1" />
 
             <Label Text="SunnyEntry:" />
-            <iosRenderer:SunnyEntry />
+            <iosRenderer:SunnyEntry x:Name="L2" />
         </StackLayout>
     </Grid>
 

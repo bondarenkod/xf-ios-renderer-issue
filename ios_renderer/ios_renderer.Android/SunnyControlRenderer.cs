@@ -19,7 +19,7 @@ namespace ios_renderer.Droid
             base.OnElementChanged(e);
 
             if (Control != null)
-                Control.SetBackgroundColor(global::Android.Graphics.Color.LightGreen);
+                Control.SetBackgroundColor(AwesomeControl.Shared.Color.ToAndroid());
         }
     }
 }

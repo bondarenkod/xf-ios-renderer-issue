@@ -17,8 +17,8 @@ namespace ios_renderer.iOS
             if (Control != null)
             {
                 // do whatever you want to the UITextField here!
-                Control.BackgroundColor = UIColor.FromRGB(204, 153, 255);
-                Control.BorderStyle = UITextBorderStyle.Line;
+                Control.BackgroundColor = AwesomeControl.Shared.Color.ToUIColor();
+                Control.BorderStyle = UITextBorderStyle.None;
             }
         }
     }
