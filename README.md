@@ -8,17 +8,17 @@ I didn't notice any issues in Android in the same approach.
 There is a chance that there is a problem in my environment or setup. 
 
 ### Description
-- `AwesomeControl`, `AwesomeControl.Droid`, `AwesomeControl.iOS` are library projects that contains `AwesomeEntry` control with renderers for both platforms
+- `AwesomeControl`, `AwesomeControl.Droid`, `AwesomeControl.iOS` are library projects that contains `AwesomeEntry` control with renderers for both platforms.
 - `ios_renderer`, `ios_renderer.Android`, `ios_renderer.iOS` are xamarin application projects that contains `SunnyEntry` control with renderers for both platforms, and the page `AboutPage` to display `SunnyEntry` and `AwesomeEntry`.
 
 
 ### Expected Behavior
-- Both Entry controls for both platforms should be of 'HotPink' color.
-- Debug is also not working in `AwesomeControl.iOS\AwesomeEntryRenderer.cs`, neither `.ctor` or `OnElementChanged` are called. 
+- Both Entries for both platforms should be of 'HotPink' color (see the screenshot from Android).
+- Debug is also not working for`AwesomeControl.iOS\AwesomeEntryRenderer.cs`, neither `.ctor` or `OnElementChanged` are called. 
 
 
 ### Actual Behavior
-- iOS renderer for `AwesomeEntry` from `AwesomeControl.iOS` is referenced by the `ios_renderer.iOS` project not working.
+- iOS renderer for `AwesomeEntry` from the `AwesomeControl.iOS` project is referenced by the `ios_renderer.iOS` project not working.
 
 ### Basic Information
 - Microsoft Visual Studio Enterprise 2022
@@ -28,7 +28,13 @@ There is a chance that there is a problem in my environment or setup.
 - Xamarin.iOS and Xamarin.Mac SDK   15.6.0.3 (caa899d24)
 - Microsoft Visual Studio for Mac 8.10.20
 
+### Screenshots
+ANDROID OK:
+
 ![android ok](https://github.com/bondarenkod/xf-ios-renderer-issue/blob/master/android_ok.jpg)
+
+iOS FAIL:
+
 ![ios not ok](https://github.com/bondarenkod/xf-ios-renderer-issue/blob/master/ios_notok.jpg)
 
 
